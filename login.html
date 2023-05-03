@@ -4,28 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <title>Lazada Login</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Lazada Vietnam - HCMC Branch!</h1>
-        <h2>Go where your heart beats!</h2>
-        <div class="topnav">
-            <a href="index.html">Home</a>
-            <a class="active" href="account.html">My Account</a>
-            <a href="login.html">Log In</a>
-        </div>
-    </header>
-    <main>
 
-    </main>
-    <footer>
-        <div class="topnav">
-            <a href="">About</a>
-            <a>Copyright</a>
-            <a>Privacy Policy</a>
+    <div id="container" class="container">
+        <div class="title">
+            <div class="title-login"><h3>Welcome to Lazada! Please login.</h3>
+                <div class="title-other"><span>New member? <a href="#">Register here.</a></span>
+                </div>
+            </div>
         </div>
-    </footer>
+
+        <div class="login">
+            <div class="login-box">
+                <div class="login-box-name">
+                    <label>Phone Number or Email</label>
+                    <input type="text" placeholder="Please enter your ID" data-meta="Field" value="">
+                    <span></span>
+                </div>
+
+                <div class="login-box-name2">
+                    <label>Password</label>
+                    <input type="password" placeholder="Please enter your password" data-meta="Field" value="">
+                    <span></span>
+                </div>
+                
+                <br>
+                <div class="login-box-name3"><a href=#>Forgot Password?</a>
+                </div>
+
+            </div>
+
+            <div class="login-box2">
+                <div class="login-box-btn">
+                    <button type="submit" class="next-btn">LOGIN</button>
+                </div>
+
+                <div class="login-box-otr">
+                    <div class="login-box-otr-box">
+                        <div class="login-box-otr-box-line"><span>Or, login with</span></div>
+                        <div class="login-box-otr-box-btn">
+                            <button class="login-box-otr-box-btn1">Facebook</button>
+                            <button class="login-box-otr-box-btn2">Google</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
