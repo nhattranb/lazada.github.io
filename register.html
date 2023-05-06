@@ -1,3 +1,7 @@
+<!--
+SOURCE: https://www.w3schools.com/howto/howto_css_register_form.asp
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +22,37 @@
         </div>
     </header>
     <main>
+        <center>
+            <form type="Sign in">
+                <div class="container">
+                  <h1>Register a My Lazada Account!</h1>
+                  <h3>Welcome to Lazada. Please fill in this form to create your My Lazada account.</h3>
+                  <p>This is your entry to all of our fun promotions and stuff!</p>
+                  <hr>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
+                  <label for="username"><b>Username:</b></label>
+                  <input type="text" placeholder="Enter Email" name="user" id="user" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+              
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                  <hr>
+              
+                  <p><a>By creating an account you agree to our <a href="#">Lazada Customer Agreement</a>.</p>
+                  <p>NOTE: Your account may be cancelled if there are flaws in the working process.</p>
+                  <button type="submit" class="registerbtn">Register</button>
+                </div>
+              
+                <div class="container signin">
+                  <p>Already have an account? <a href="#">Sign in</a>.</p>
+                </div>
+              </form>
+        </center>
     </main>
     <footer>
         <div class="topnav">
