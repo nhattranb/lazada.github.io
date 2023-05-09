@@ -1,0 +1,25 @@
+{
+  "name": "lazada.github.io",
+  "version": "1.0.0",
+  "description": "The code repository for the project",
+  "main": "index.js",
+  "scripts": {
+    "test": "testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhattranb/lazada.github.io.git"
+  },
+  "keywords": [
+    "fullstack"
+  ],
+  "author": "Nhat Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhattranb/lazada.github.io/issues"
+  },
+  "homepage": "https://github.com/nhattranb/lazada.github.io#readme",
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
+}
