@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="vendors.ejs"></script>
+    <title>Add a new product - Lazada PDC</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lazada Vietnam - HCMC Branch!</h1>
+        <h2>Go where your heart beats!</h2>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="account.html">My Account</a>
+            <a href="login.html">Log In</a>
+        </div>
+    </header>
+    <main>
+        <h1>Welcome to the Lazada Product Distribution Center!</h1>
+        <h2>Vendor representatives please follow the instructions to add your product:</h2>
+        <form>
+            <label for="pname">Name of the products:</label><br>
+            <input type="text" id="pname" name="pname" minlength="10" maxlength="20"><br>
+            <label for="cat">Category of the product:</label><br>
+            <input type="text" id="cat" name="cat">
+            <label for="price">Price of the product:</label><br>
+            <input type="number" id="price" name="price" min="0">
+            <label for="desc">Description of the product:</label><br>
+            <input type="text" id="desc" name="desc" maxlength="500">
+        </form>
+        <input type="checkbox" id="accept" name="accept" value="Yes">
+        <label for="accept">I agree to follow the Lazada-Vendor Agreement.</label><br>
+        <br>
+        <label for="complete">Add Your Product!</label>
+        <input type="submit" value="Complete your product" onClick="myFunction()">
+        <script>
+            function myFunction() {
+              window.location.href="vendmana.html";
+            }
+        </script>
+    </main>
+    <footer>
+        <div class="topnav">
+            <a href="">About</a>
+            <a>Copyright</a>
+            <a>Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
