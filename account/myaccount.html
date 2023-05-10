@@ -18,14 +18,60 @@
         </div>
     </header>
     <main>
-        <center>
-            <h1>Customer Information</h1>
-            <p>Username: lzd1234</p>
-            <p>Customer's Name: Nguyen Van A</p>
-            <p>ID Number: 123456</p>
-            <p>Number of products: ...</p>
-            <button type="submit">Log Out</button>
-        </center>
+        <div class="contents">
+            <div class="tab-container">   
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">Account detail</li>
+                    <li class="tab-link current" data-tab="tab-2">add later...</li>
+                    <li class="tab-link current" data-tab="tab-3">add later...</li>
+                    <li class="tab-link current" data-tab="tab-4">add later...</li>
+                    <li class="tab-link current" data-tab="tab-5">add later...</li>
+                </ul>
+
+                <div id="tab-1" class="tab-content current">tab1입니다.</p></div>
+                <div id="tab-2" class="tab-content"><p>tab2입니다.</p></div>
+                <div id="tab-3" class="tab-content"><p>tab3입니다.</p></div>
+                <div id="tab-4" class="tab-content"><p>tab3입니다.</p></div>
+                <div id="tab-5" class="tab-content"><p>tab3입니다.</p></div>
+            </div>    
+            <script>
+                $(document).ready(function() {
+                    $('ul.tabs li').click(function() {
+                        var tab_id = $(this).attr('data-tab');
+
+                        $('ul.tabs li').removeClass('current');
+                        $('.tab-content').removeClass('current');
+
+                        $(this).addClass('current');
+                        $('#'+tab_id).addClass('current');
+                    });
+                });
+            </script>    
+
+
+
+
+
+
+
+                <center>
+                        <h1>Customer Information</h1>
+                        <p>Username: lzd1234</p>
+                        <p>Customer's Name: Nguyen Van A</p>
+                        <p>ID Number: 123456</p>
+                        <p>Number of products: ...</p>
+                        <button type="submit">Log Out</button>
+
+
+
+
+
+
+
+
+              </center>          
+            </div>
+        </div>      
     </main>
     <footer>
         <div class="topnav">
