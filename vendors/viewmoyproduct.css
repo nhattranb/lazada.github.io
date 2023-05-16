@@ -1,0 +1,262 @@
+/* table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f1f1f1;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button {
+  padding:10px;
+  color: #E8F1F5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #005691;
+  transition: 0.5s ease;
+  border: 4px solid #005691; 
+
+}
+
+button:hover{
+    background: #E8F1F5;
+    color: #005691;
+} */
+
+.tab-container {
+  display: flex;
+}
+
+.tab-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-link {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.tab-content {
+  padding: 10px;
+}
+
+.tab-item {
+  display: none;
+}
+
+.tab-item.active {
+  display: block;
+}
+
+.tab-navigation button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 4px solid #005691;
+    border-radius: 10px;
+    margin-top: 5px;
+    background: #005691;
+    color: #E8F1F5;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.tab-navigation button:hover {
+    background: #E8F1F5;
+    color: #005691;
+}
+
+main {
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 35px;
+	background-color: white;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom:40px;
+	/* text-align: center; */
+  /* background-color:#fafafa; */
+  
+  
+}
+
+.tab-content {
+    margin-left:100px;
+}
+
+.tab-content {
+    display:flex;
+    margin:0 auto;
+}
+
+.vendor-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  .product-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  .vendor-page {
+    text-align: center;
+  }
+  
+#product-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #E8F1F5;
+}
+
+.product-table th,
+.product-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  background-color: #E8F1F5;
+}
+
+.product-table th {
+  background-color: #f1f1f1;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-info img {
+  max-width: 50px;
+  height: auto;
+}
+
+.edit-btn {
+  padding: 5px 10px;
+  border: 4px solid #005691;
+  border-radius: 10px;
+  background: #005691;
+  color: #E8F1F5;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.5s ease;
+}
+.delete-btn {
+  padding: 5px 10px;
+  border: 4px solid #005691;
+  border-radius: 10px;
+  background: #005691;
+  color: #E8F1F5;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.5s ease;
+}
+
+.edit-btn:hover {
+  background: #E8F1F5;
+  color: #005691;  
+}
+
+
+.delete-btn:hover {
+  background: #E8F1F5;
+  color: #005691;
+  border-color:#e74646;
+}
+
+.vendor-page > button {
+  display:flex;
+  margin-left: auto;
+  padding: 5px 10px;
+  border: 4px solid #005691;
+  border-radius: 10px;
+  background: #005691;
+  color: #E8F1F5;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.5s ease;
+}
+.vendor-page > button:hover {
+  background: #E8F1F5;
+  color: #005691;  
+}
+
+@media only screen and (max-width: 768px) {
+  .product-table thead,
+  .product-table tbody,
+  .product-table th,
+  .product-table td {
+    display: block;
+  }
+
+  .product-table tbody {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .product-table tr {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  .product-table th,
+  .product-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .product-table th {
+    background-color: #f1f1f1;
+  }
+
+  .product-info {
+    flex: 1;
+  }
+
+  .product-info img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
