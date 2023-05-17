@@ -85,6 +85,26 @@ body{
   color: #da291c;
 }
 
+/*responsive design for tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .categories img {
+    width: 70px;
+  }
+}
+
+
+/*responsive design for smart phone*/
+@media only screen and (max-width: 767px) {
+  .category {
+    width: 100px;
+  }
+  .categories img {
+    width: 30px;
+  }
+}
+
+
+
 /* Main content section styles */
 
 /* CSS styling */
@@ -96,7 +116,8 @@ body{
 }
 
 .product {
-  width: 15%;
+  /* width: 15%; */
+  width: calc(20% - 60px);
   margin: 10px;
   display: inline-block;
   text-align: center;
@@ -133,4 +154,26 @@ body{
 .product-name p {
   font-size: 1rem;
   color: rgb(245,114,36);
+}
+
+
+/*responsive design for tablet, 3column*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .product {
+  width: calc(33% - 40px);
+  }
+}
+
+
+/*responsive design for smart phone, 2column*/
+@media only screen and (max-width: 767px) {
+  .product {
+  width: calc(50% - 30px);
+  }
+
+  .product-png {
+    width: 130px;
+    height: 130px;
+  }
+
 }

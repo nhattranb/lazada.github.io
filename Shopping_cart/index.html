@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Lazada</title>
+</head>
+
+<body>
+  <h1>Shopping Cart</h1>
+  <div id="cart-items"></div>
+
+  <div class="Summary">
+    <section class="cart-summary">
+      <h2>Summary</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Subtotal:</td>
+            <td id="subtotal">$0</td>
+          </tr>
+          <tr>
+            <td>Tax:</td>
+            <td id="tax">$0</td>
+          </tr>
+          <tr>
+            <td>Total:</td>
+            <td id="total">$0</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class = "remove" onclick="clearCart()">Remove all products</button>
+      <button>Checkout</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
